@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game{
+    width: 1000px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+#character{
+    width: 20px ;
+    height: 50px;
+    background: rgb(0, 13, 255);
+    position: relative;
+    top: 250px;
+    
+}
+.animate{
+    animation: jump 500ms ;
+}
+
+@keyframes jump{
+    0%{top: 250px;}
+    30%{top: 150px;}
+    70%{top: 150px;}
+    100%{top: 250px;}
+  
+}
+
+#block{
+    width: 20px ;
+    height: 20px;
+    background: rgb(18, 108, 18);
+    position: relative;
+    top: 230px;
+    left: 980px;
+
+    animation: block 1.5s infinite;
+
+}
+@keyframes block{
+    0%{left: 980px;}
+    100%{left: -40px;}
+    
+}
